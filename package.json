@@ -29,7 +29,12 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^4.0.4",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.1",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
     "concurrently": "^4.1.1",
-    "cypress": "^3.3.2"
+    "cypress": "^3.3.2",
+    "typescript": "3.4.5"
   }
 }
