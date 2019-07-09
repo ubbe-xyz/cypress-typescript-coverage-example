@@ -9,7 +9,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "concurrently --kill-others-on-fail -p {name} --names App,Cypress --prefix-colors bgBlue.bold,bgGreen.bold  \" BROWSER=none yarn start\" \"yarn cypress open\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^4.0.4",
+    "concurrently": "^4.1.1",
     "cypress": "^3.3.2"
   }
 }
