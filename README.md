@@ -10,15 +10,19 @@ See [Cypress code coverage](https://on.cypress.io/code-coverage) docs for more i
 
 ## Running the example 🏃🏻‍
 
-First, make sure you have [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) installed.
+First, make sure you have [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) installed, and then:
 
-To run the example Typescript app:
+```
+yarn
+```
+
+You can run the example Typescript app:
 
 ```
 yarn start
 ```
 
-To run the Cypress test suite with code coverage:
+Or run the Cypress tests with code coverage:
 
 ```
 CODE_COVERAGE=true yarn test
@@ -26,7 +30,13 @@ CODE_COVERAGE=true yarn test
 
 ⚠️
 
-_We're enabling code coverage behind an environment variable to **only** instrument our code in this scenario. Don't serve instrumented code to real users of your app._
+_We're enabling code coverage behind an environment variable to **only** instrument our code in this scenario. Don't serve instrumented code to your users._
+
+To see the code coverage report just do:
+
+```
+open coverage/index.html
+```
 
 ## How does it work 🤨
 
@@ -54,7 +64,7 @@ and make sure that Istanbul takes advantage of it by adding this configuration i
 
 #### Babel
 
-If you're compiling TS thought Babel, the easiest way is to use `babel-plugin-istanbul` which will instrument the compiled code through Babel for us. ( _this is the approach taken on this example repo_ ):
+If you're compiling TS though Babel, the easiest way is to use `babel-plugin-istanbul` which will instrument the transpiled code for us. ( _this is the approach taken on this example repo_ ):
 
 ```
 yarn add -D  babel-plugin-istanbul
