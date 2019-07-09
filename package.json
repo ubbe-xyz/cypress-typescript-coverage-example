@@ -2,39 +2,31 @@
   "name": "cypress-typescript-code-coverage-example",
   "version": "0.1.0",
   "dependencies": {
+    "@types/styled-components": "^4.1.16",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-dom": "^16.8.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
+    "start": "yarn webpack-dev-server",
     "test": "concurrently --kill-others-on-fail -p {name} --names App,Cypress --prefix-colors bgBlue.bold,bgGreen.bold  \" BROWSER=none yarn start\" \"yarn cypress open\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
     "@testing-library/cypress": "^4.0.4",
-    "@types/jest": "^24.0.15",
-    "@types/node": "^12.6.1",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
     "concurrently": "^4.1.1",
     "cypress": "^3.3.2",
-    "typescript": "3.4.5"
+    "html-webpack-plugin": "^3.2.0",
+    "styled-components": "^4.3.2",
+    "typescript": "3.4.5",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
   }
 }
