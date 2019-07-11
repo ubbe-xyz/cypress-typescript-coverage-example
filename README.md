@@ -35,7 +35,7 @@ _We're enabling code coverage behind an environment variable to **only** instrum
 To see the code coverage report just do:
 
 ```
-open coverage/index.html
+open coverage/lcov-report/index.html
 ```
 
 ## How does it work 🤨
