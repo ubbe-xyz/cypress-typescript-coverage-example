@@ -4,6 +4,7 @@
 	"major": {
 		"automerge": false
 	},
-	"automergeType": "branch",
+	"automergeType": "pr",
+	"requiredStatusChecks": null,
 	"commitBodyTable": true
 }
