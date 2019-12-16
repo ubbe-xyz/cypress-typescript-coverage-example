@@ -1,10 +1,11 @@
 {
-	"extends": [ "config:base" ],
-	"automerge": true,
-	"major": {
-		"automerge": false
-	},
-	"automergeType": "pr",
-	"requiredStatusChecks": null,
-	"commitBodyTable": true
+  "extends": ["config:base"],
+  "commitBodyTable": true,
+  "requiredStatusChecks": null,
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }
