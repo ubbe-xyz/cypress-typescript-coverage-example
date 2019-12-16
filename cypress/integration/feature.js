@@ -4,10 +4,10 @@ describe('When landing on the application', () => {
   });
 
   it('should greet the user', () => {
-    cy.getByText('Hello world');
+    cy.queryByText('Hello world').should('exist');
   });
 
   it('should show planet earth', () => {
-    cy.getByText('🌏');
+    cy.queryByText('🌏').should('exist');
   });
 });
