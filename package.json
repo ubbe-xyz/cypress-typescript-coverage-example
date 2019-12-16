@@ -2,7 +2,7 @@
   "name": "cypress-typescript-code-coverage-example",
   "version": "0.1.0",
   "dependencies": {
-    "@types/styled-components": "4.4.0",
+    "@types/styled-components": "4.4.1",
     "react": "16.11.0",
     "react-dom": "16.11.0"
   },
