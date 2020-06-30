@@ -16,8 +16,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.10.4",
-    "@babel/preset-env": "7.10.3",
-    "@babel/preset-react": "7.10.1",
+    "@babel/preset-env": "7.10.4",
+    "@babel/preset-react": "7.10.4",
     "@babel/preset-typescript": "7.10.1",
     "@cypress/code-coverage": "1.14.0",
     "@istanbuljs/nyc-config-typescript": "0.1.3",
